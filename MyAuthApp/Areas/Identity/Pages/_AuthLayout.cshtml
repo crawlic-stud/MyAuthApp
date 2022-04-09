@@ -1,0 +1,16 @@
+﻿@{ 
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<div class="card login-logout-tab offset-md-3 col-md-6">
+    <div class="card-content">
+        <div class="row">
+            <div class="card-body">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</div>        
+
+@section Scripts {
+    @RenderSection("Scripts", required: false);
+}
